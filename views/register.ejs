@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="login.css" rel="stylesheet" type="text/css"/>
+    
+    <title>OAuthApp</title>
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="sidebar-message">
+            <div class="sidebar-content">
+                <h1>This is message side</h1>
+            </div> 
+        </div>
+        <div class="sidebar-login">
+            <div class="auth-box-container">
+                <div class="auth-box">
+                    <div class="auth-form-wrapper"> 
+                        <div class="form-heading">
+                            <h2>Register to site</h2>
+                            <p>Excited</p>
+                        </div>
+                        <div class="form-login">
+                            <form action="/register" method="post"> 
+                                <div class="form-group">    
+                                    <input type="text" id="username" name="username" placeholder="Your username" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="password" name="password" placeholder="Your password" required >
+                                </div>
+                                <button type="signup">Sign Up</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card social-block">
+                          <div class="card-body">
+                            <a class="btn btn-block" href="/auth/google" role="button">
+                              <i class="fab fa-google"></i>
+                              Sign Up with Google
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
