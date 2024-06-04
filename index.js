@@ -75,12 +75,12 @@ app.get(
     "/auth/google",
     passport.authenticate("google", {
       scope: ["profile", "email"],
-      successRedirect: "/dashboard",
+      successRedirect: "/auth/google/dashboard",
         failureRedirect: "/login",
     })
 );  
 
-app.get("/dashboard",(req,res)=>{
+app.get("/auth/google/dashboard",(req,res)=>{
     res.render('dashboard');
 });
 

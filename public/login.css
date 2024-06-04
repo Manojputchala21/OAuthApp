@@ -43,7 +43,7 @@ h1 {
 
 input[type="text"],
 input[type="password"] {
-    width: 100%;
+    width: 50vh;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -62,8 +62,8 @@ input[type="password"] {
     margin: 10px;
 }
 
-button[type="login"],[type="signup"] {
-    width: 106%;
+button[type="login"],[type="signup"]{
+    width: 53vh;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -73,7 +73,50 @@ button[type="login"],[type="signup"] {
     cursor: pointer;
 }
 
+
+.social-login{
+    display:  grid;
+}
+.socail-btn-google-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socail-btn-other-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+button[class="socail-btn-google"]{
+    width: 53vh;
+    padding: 10px;
+    border: solid;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+button[class="socail-btn"]{
+    border: solid;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+
+}
 button:hover {
     background-color:lightblue;
 }
-
